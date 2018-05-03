@@ -30,7 +30,7 @@
     (cond
      ((= 0 b) r)
      ((even? b) (mult r (double a) (/ b 2)))
-     (else (mult a a (- b 1)))))
+     (else (mult (+ r a) a (- b 1)))))
   (mult 0 a b)
   )
 

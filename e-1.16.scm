@@ -10,6 +10,11 @@
 ; from state to state is a powerful way to think about the design of iterative algorithms.)
 ;
 
+;;    b    ^     n
+;;=   (b^2) ^ (n/2)
+;;=b* b    ^ (n - 1)
+
+
 (define (square x)
   (* x x))
 
