@@ -1,5 +1,4 @@
-Structure and Interpretation of Computer Programs
-==================================================
+# Structure and Interpretation of Computer Programs
 
 Second Edition
 
@@ -18,12 +17,12 @@ foreword by Alan J. Perlis
 
 The author thanks to the unknown translators. Maybe the translation is done without prior permission.
 
-* Chapter 1::        Building Abstractions with Procedures
+## Chapter 1::        Building Abstractions with Procedures
 
 This chapter deals mainly with numerical algorithms. The data type are numbers.
 Many mathematical problems and the solving techniques are discussed.
 
-* Chapter 2::        Building Abstractions with Data
+## Chapter 2::        Building Abstractions with Data
 
 This chapter intrduces data structures that are more complex than numbers. rational numbers and even pictures are introduced.
 
@@ -91,7 +90,9 @@ There's a Russia Peasant Multiplication which uses this kind of mechanism and ha
 This is also called Euclid's algorithm. It is very old and may be invented by the Greek.
 
 
-* 1-2-6::            Example: Testing for Primality
+#### 1-2-6            Example: Testing for Primality
+
+Here introduces the Fermat test. It is the probabilistic test.
 
 Formulating Abstractions with Higher-Order Procedures
 
