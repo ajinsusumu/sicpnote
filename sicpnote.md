@@ -9,6 +9,10 @@ foreword by Alan J. Perlis
 (C) 1996 Massachusetts Institute of Technology
 
 
+
+Book: as above
+Course: MIT 6.001 (Now 6.037)
+
 * Dedication::       Dedication
 * Foreword::         Foreword
 * Preface::          Preface to the Second Edition
@@ -194,6 +198,12 @@ Metalinguistic Abstraction
 
 The Metacircular Evaluator
 
+cs61a has a Python implementation. I've finished it.
+bymu also has a calysto scheme implementation which is targeted on python. it is written in Chez Scheme. May also be targeted on other languages like C#.
+
+Other courses like the one in brandies and cs61as has the metacircular evaluator projects.
+
+
 * 4-1-1::            The Core of the Evaluator
 * 4-1-2::            Representing Expressions
 * 4-1-3::            Evaluator Data Structures
@@ -209,6 +219,8 @@ Variations on a Scheme -- Lazy Evaluation
 * 4-2-3::            Streams as Lazy Lists
 
 Variations on a Scheme -- Nondeterministic Computing
+
+Stuffs related to backtracking.
 
 * 4-3-1::            Amb and Search
 * 4-3-2::            Examples of Nondeterministic Programs
