@@ -1,0 +1,26 @@
+(load "util.scm")
+
+(define (tan-cf x k)
+  (define (con-frac-iter n d k)
+    (define (iter i r)
+      (cond
+       ((= 0 i) r)
+       (else
+        (iter (- i 1)
+              (/ (n i x) (- (d i) r))
+              ))
+       )
+      )
+    (iter k 0.0)
+    )
+  (con-frac-iter
+   (lambda (i x) (expt x i))
+   (lambda (i) (+ i i -1))
+   k)
+  )
+(define (cfi x)
+  (lambda (k)
+    (tan-cf x k)))
+;; (cfi 12)
+(tan-cf .785 10)
+(map (cfi .785) (range 200))
