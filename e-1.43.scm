@@ -1,0 +1,25 @@
+(define (square x) (* x x))
+(define (inc x) (+ 1 x))
+
+(define (compose f g)
+  (lambda (x) (f (g x))))
+
+(define (repeated f n)
+  (define (rptf r x n)
+    (if (= 0 n)
+        r
+        (rptf (f r) x (- n 1))
+        )
+    )
+  (define (rptf1 x n)
+    (if (= 0 n)
+        x
+        (f (rptf1 x (- n 1)))
+        ))
+  (lambda (x)
+    ;; (rptf1 x n)
+    ;; (rptf x x n)
+   (if (= 0 n) x ((compose f (repeated f (- n 1))) x))
+    )
+  )
+((repeated square 2) 5)
