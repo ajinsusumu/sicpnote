@@ -22,3 +22,9 @@ print(
     ))(10)
     )
 
+print(
+    (lambda n: (
+        (lambda fact: fact(fact,n,n))
+        (lambda ft,k,r: r if k==1 else ft(ft,k-1,r*(k-1)))
+    ))(10)
+    )
