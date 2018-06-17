@@ -106,4 +106,4 @@
   )
 
 
-(queens 8)
+(accumulate + 0 (map (lambda (x) 1) (queens 8)))
