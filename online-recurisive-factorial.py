@@ -24,7 +24,7 @@ print(
 
 print(
     (lambda n: (
-        (lambda fact: fact(fact,n,n))
-        (lambda ft,k,r: r if k==1 else ft(ft,k-1,r*(k-1)))
+        (lambda fact: fact(fact,n,1))
+        (lambda ft,k,r: r if k==1 else ft(ft,k-1,r*k))
     ))(10)
     )
